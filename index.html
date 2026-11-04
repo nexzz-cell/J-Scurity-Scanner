@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>J Security Scanner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h2>J<span>SECURITY</span></h2>
+    <span class="status">● SYSTEM ONLINE</span>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <h1>WEB SECURITY<br>SCANNER_</h1>
+      <p>Automated vulnerability assessment dashboard.</p>
+    </section>
+    <section class="panel">
+      <label for="target">TARGET URL</label>
+      <input id="target" type="url" placeholder="https://lab.example.com" required>
+      <button id="scanBtn">START SCAN →</button>
+    </section>
+    <section class="panel">
+      <div class="console-head"><h3>TERMINAL OUTPUT</h3><span>LIVE LOG</span></div>
+      <pre id="console">[SYSTEM] Waiting for target...</pre>
+    </section>
+    <section class="panel">
+      <h3>SCAN RESULTS</h3>
+      <div id="results">No scan performed.</div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
