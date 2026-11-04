@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>J Security Scanner</title>
+  <title>J Security Scanner — Active</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,12 +14,24 @@
   <main class="container">
     <section class="hero">
       <h1>WEB SECURITY<br>SCANNER_</h1>
-      <p>Automated vulnerability assessment dashboard.</p>
+      <p>Active vulnerability assessment — SQLi / XSS / IDOR / SSRF / Open Redirect.</p>
     </section>
     <section class="panel">
       <label for="target">TARGET URL</label>
-      <input id="target" type="url" placeholder="https://lab.example.com" required>
-      <button id="scanBtn">START SCAN →</button>
+      <input id="target" type="url" placeholder="https://target.com/" required>
+
+      <div class="sessions">
+        <div>
+          <label for="cookieA">Session A (cookie, optional)</label>
+          <input id="cookieA" type="text" placeholder="sid=abc123; csrftoken=...">
+        </div>
+        <div>
+          <label for="cookieB">Session B (cookie, optional)</label>
+          <input id="cookieB" type="text" placeholder="sid=xyz789; csrftoken=...">
+        </div>
+      </div>
+
+      <button id="scanBtn">START ACTIVE SCAN →</button>
     </section>
     <section class="panel">
       <div class="console-head"><h3>TERMINAL OUTPUT</h3><span>LIVE LOG</span></div>
